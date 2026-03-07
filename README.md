@@ -475,6 +475,13 @@ The full project report and presentation are available in the [`report/`](report
 
 ---
 
+## Acknowledgements
+
+The project, implementation, experiments, and analysis were done entirely by the authors.
+Claude AI (Anthropic) assisted with organizing the repository structure and writing this README.
+
+---
+
 ## License
 
 This project is licensed under the **Ackermann Path-Following Controllers License**.
