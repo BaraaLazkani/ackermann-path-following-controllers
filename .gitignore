@@ -1,0 +1,43 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+*.egg
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!src/**/CMakeLists.txt
+
+# C++ compiled objects
+*.o
+*.so
+*.a
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary test outputs
+*.bag
+*.db3
+/test_data/results/*.csv
+!/results/data/
+
+# Environment
+.env

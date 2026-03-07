@@ -1,0 +1,21 @@
+/**:
+  ros__parameters:
+    controller_type: "lqr"
+    trajectory_type: "figure8"
+    output_file: "test_data/results/lqr_figure8.csv"
+    control_frequency: 50.0
+
+    # Vehicle parameters
+    wheelbase: 0.22
+    max_steering_angle: 0.6109
+    max_velocity: 2.0
+
+    # LQR controller parameters
+    lqr:
+      q_cte: 10.0         # State cost: cross-track error (reduced for stability)
+      q_cte_dot: 0.1      # State cost: CTE rate (reduced)
+      q_heading: 5.0      # State cost: heading error (reduced for stability)
+      q_heading_dot: 0.1  # State cost: heading rate (reduced)
+      r: 5.0              # Control cost (increased to penalize large steering)
+      base_velocity: 0.5
+      curvature_gain: 1.5

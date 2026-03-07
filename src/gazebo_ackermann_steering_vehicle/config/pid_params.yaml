@@ -1,0 +1,20 @@
+/**:
+  ros__parameters:
+    controller_type: "pid"
+    trajectory_type: "figure8"
+    output_file: "test_data/results/pid_figure8.csv"
+    control_frequency: 50.0
+
+    # Vehicle parameters
+    wheelbase: 0.22
+    max_steering_angle: 0.6109
+    max_velocity: 2.0
+
+    # PID controller parameters
+    pid:
+      kp: 4.0           # Proportional gain (EVEN MORE AGGRESSIVE for figure8)
+      ki: 0.2           # Integral gain (increased)
+      kd: 1.0           # Derivative gain (increased for stability)
+      base_velocity: 1.0
+      curvature_gain: 2.0 # INCREASED - slow down more on tight curves (figure8)
+      max_integral: 1.0

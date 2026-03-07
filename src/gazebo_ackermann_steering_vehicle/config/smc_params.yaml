@@ -1,0 +1,20 @@
+/**:
+  ros__parameters:
+    controller_type: "smc"
+    trajectory_type: "figure8"
+    output_file: "test_data/results/smc_figure8.csv"
+    control_frequency: 50.0
+
+    # Vehicle parameters
+    wheelbase: 0.22
+    max_steering_angle: 0.6109
+    max_velocity: 2.0
+
+    # SMC with decoupled heading/position control (hybrid SMC-Stanley approach)
+    smc:
+      lambda: 4.0         # CTE gain (EVEN MORE AGGRESSIVE for figure8)
+      k: 2.0              # Heading error proportional gain (MORE AGGRESSIVE)
+      eta: 0.4            # Heading error switching gain (robustness)
+      epsilon: 0.15       # Boundary layer (reduced for sharper response)
+      base_velocity: 1.0
+      curvature_gain: 2.0 # INCREASED - slow down more on tight curves (figure8)
