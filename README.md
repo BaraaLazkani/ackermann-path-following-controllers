@@ -2,7 +2,7 @@
 
 A ROS 2 simulation package that implements and compares three path-following control algorithms — **PID**, **Stanley**, and **Sliding Mode Control (SMC)** — on an Ackermann steering vehicle in Gazebo Harmonic. The project was developed as part of a Multivariable Control Systems course at Manara University.
 
-> **Authors:** Ammar Daher, Baraa Lazkani, Humam Yehia
+> **Authors:** Ammar Daher, Baraa Lazkani, Humam Yehi
 > **Institution:** Manara University
 > **Contact:** lazkani.baraa.official@gmail.com
 
